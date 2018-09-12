@@ -344,8 +344,8 @@ class VMwareDeployOvf:
             for key, value in self.params['properties'].items():
                 property_mapping = vim.KeyValue()
                 property_mapping.key = key
-                property_mapping.value = value
-#                property_mapping.value = str(value) if isinstance(value, bool) else value
+#                property_mapping.value = value
+                property_mapping.value = str(value) if isinstance(value, bool) else value
                 params['propertyMapping'].append(property_mapping)
 
         if self.params['folder']:
