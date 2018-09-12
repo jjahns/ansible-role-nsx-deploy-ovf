@@ -16,7 +16,7 @@ Deploy a NSX-T virtual appliance (OVF/OVA) to a vSphere environment.
 Install using Ansible Galaxy:
 
 ```
-$ ansible-galaxy install jjahns.nsx-deploy-ovf
+$ ansible-galaxy install jjahns.nsx_deploy_ovf
 ```
 
 ## Role Variables
