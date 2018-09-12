@@ -1,0 +1,13 @@
+---
+nsx_ovf_vsphere_validate_certs: yes
+nsx_ovf_allow_duplicates: no
+nsx_ovf_deployment_option: medium
+nsx_ovf_disk_provisioning: thin
+nsx_ovf_fail_on_spec_warnings: yes
+nsx_ovf_vmname: "{{ inventory_hostname }}"
+nsx_ovf_power_on: yes
+nsx_ovf_wait: yes
+nsx_ovf_wait_for_ip_address: yes
+nsx_ovf_enable_ssh: False
+nsx_ovf_enable_root_ssh: False
+nsx_ovf_vmhostname: "{{ inventory_hostname }}"
