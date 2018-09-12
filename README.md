@@ -82,7 +82,7 @@ All variables with default values are located in [defaults/main.yml](defaults/ma
 ```
 ## License
 
-This project is licened under BSD-2 License. See [LICENSE](/LICENSE) for more details.
+This project is licened under [BSD-2](https://opensource.org/licenses/BSD-2-Clause) License. See [LICENSE](/LICENSE) for more details.
 
 ## Dependencies
 
