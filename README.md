@@ -12,6 +12,7 @@ Role responsible for deploying NSX-T virtual appliances against a vSphere enviro
 ## Default Variables
 
 Values that are set by default, with the corresponding value.
+If you wish to change these values, please define them in your playbook or your host_vars. Do not edit these defaults.
 
 * `nsx_ovf_vsphere_username:` administrator@vsphere.local
 * `nsx_ovf_vsphere_validate_certs:` yes
@@ -29,7 +30,8 @@ Values that are set by default, with the corresponding value.
 
 ## Required Variables
 
-Values that are not set and are required to make a successful run.
+Values that are not set and are required.
+Playbooks will fail to run if calling this role without these variables set either at run time or at the host level. It is not recommended to set properties such as nsx_ovf_ip_address at the group level.
 
 * `nsx_ovf_vsphere_hostname:`
 * `nsx_ovf_vsphere_password:`
@@ -50,6 +52,7 @@ Values that are not set and are required to make a successful run.
 ## Optional Variables
 
 Values that are optional but not critical to make a successful run.
+Playbooks do not require them unless the virtual appliance has a specific need (i.e. nsx_ovf_role) or you wish to store your NSX virtual appliance in a vSphere folder, or have a specific resource pool all NSX virtual appliances are going in.
 
 * `nsx_ovf_folder:`
 * `nsx_ovf_role:`
