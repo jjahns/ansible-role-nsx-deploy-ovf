@@ -11,6 +11,14 @@ Deploy a NSX-T virtual appliance (OVF/OVA) to a vSphere environment.
 * ansible (latest release)
 * NSX-T (2.2 or higher)
 
+## Installation
+
+Install using Ansible Galaxy:
+
+```
+$ ansible-galaxy install jjahns.nsx-deploy-ovf
+```
+
 ## Role Variables
 
 All variables with default values are located in [defaults/main.yml](defaults/main.yml) and can be overridden. It is recommended that variables be placed at the host_vars level per NSX-T virtual appliance deployed. While playbooks can use a local connection, variables are still in the context of the host(s) referenced in the playbooks using this role.
@@ -78,7 +86,7 @@ All variables with default values are located in [defaults/main.yml](defaults/ma
     nsx_ovf_password: my_admin_password_to_nsx
     nsx_ovf_root_password: my_root_password_to_nsx
   roles:
-    - nsx-deploy-ovf
+    - jjahns.nsx-deploy-ovf
 ```
 ## License
 
