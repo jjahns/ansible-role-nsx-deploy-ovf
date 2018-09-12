@@ -1,14 +1,15 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-#
+
 # Copyright: (c) 2017, Matt Martz <matt@sivel.net>
 #
 # GNU General Public License v3.0+ (see COPYING or https://www.gnu.org/licenses/gpl-3.0.txt)
-#
+
 # vmware: this module is not in current releases of Ansible as of 9/12/2018,
 #         so it has been copied and adjusted as per issue: #45528
 #         (https://github.com/ansible/ansible/issues/45528) so boolean values
 #         will function as expected if inside ovf properties.
+
 from __future__ import absolute_import, division, print_function
 __metaclass__ = type
 
