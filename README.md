@@ -9,7 +9,7 @@ Deploy a NSX-T virtual appliance (OVF/OVA) to a vSphere environment.
 * pyVmomi (install via pip)
 * pyVim (install via pip)
 * ansible (latest release)
-* NSX-T (2.2 or higher)
+* NSX-T OVF/OVA Appliances, 2.2 or later
 
 ## Installation
 
