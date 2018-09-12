@@ -1,6 +1,8 @@
-# nsx-ovf
+# Ansible Role: nsx-ovf
 
-Role responsible for deploying NSX-T virtual appliances against a vSphere environment. This role utilizes the vmware_deploy_ovf role, which is pre-built into Ansible.
+## Description
+
+Deploy a NSX-T virtual appliance (OVF/OVA) to a vSphere environment.
 
 ## Requirements
 
@@ -8,6 +10,18 @@ Role responsible for deploying NSX-T virtual appliances against a vSphere enviro
 * pyVim (install via pip)
 * ansible (latest release)
 * NSX-T (2.2 or higher)
+
+## Role Variables
+
+All variables with default values are located in [defaults/main.yml](defaults/main.yml) and can be overridden. It is recommended that variables be placed at the host_vars level per NSX-T virtual appliance deployed.
+
+| Name           | Default Value | Description                        |
+| -------------- | ------------- | -----------------------------------|
+| `nsx_ovf_vsphere_hostname` | | IP/FQDN of vSphere host (vCenter/ESXI) |
+| `nsx_ovf_vsphere_username` | administrator@vsphere.local | vSphere user account to deploy virtual appliance with |
+| `nsx_ovf_vsphere_password` | | Password of vSphere user account |
+| `nsx_ovf_vsphere_validate_certs` | yes | Whether or not to validate vSphere SSL certificates |
+ 
 
 ## Default Variables
 
