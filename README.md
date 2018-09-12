@@ -7,6 +7,7 @@ Role responsible for deploying NSX-T virtual appliances against a vSphere enviro
 * pyVmomi (install via pip)
 * pyVim (install via pip)
 * ansible (latest release)
+* NSX-T (2.2 or higher)
 
 ## Default Variables
 
