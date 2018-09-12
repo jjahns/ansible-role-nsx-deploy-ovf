@@ -12,6 +12,7 @@
 # POSSIBILITY OF SUCH DAMAGE.
 
 galaxy_info:
+  role_name: nsx-deploy-ovf
   author: Jay Jahns
   description: jjahns@vmware.com
   company: VMware, Inc.
