@@ -61,7 +61,7 @@ Playbooks do not require them unless the virtual appliance has a specific need (
 ## Example (Assumes defaults)
 
 ```
-- hosts: nsx-manager
+- hosts: nsx-manager[0]
   gather_facts: no
   connection: local
   vars:
