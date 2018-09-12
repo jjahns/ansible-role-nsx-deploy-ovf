@@ -84,6 +84,7 @@ Values that are optional but not critical to make a successful run.
     nsx_ovf_root_password: my_root_password_to_nsx
   roles:
     - nsx-ovf
+```
 
 ## Dependencies
 
