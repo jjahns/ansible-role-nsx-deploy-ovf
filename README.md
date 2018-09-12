@@ -1,4 +1,4 @@
-# Ansible Role: nsx-ovf
+# Ansible Role: nsx-deploy-ovf
 
 ## Description
 
@@ -13,7 +13,7 @@ Deploy a NSX-T virtual appliance (OVF/OVA) to a vSphere environment.
 
 ## Role Variables
 
-All variables with default values are located in [defaults/main.yml](defaults/main.yml) and can be overridden. It is recommended that variables be placed at the host_vars level per NSX-T virtual appliance deployed.
+All variables with default values are located in [defaults/main.yml](defaults/main.yml) and can be overridden. It is recommended that variables be placed at the host_vars level per NSX-T virtual appliance deployed. While playbooks can use a local connection, variables are still in the context of the host(s) referenced in the playbooks using this role.
 
 | Name           | Default Value | Description                        |
 | -------------- | ------------- | -----------------------------------|
@@ -49,9 +49,7 @@ All variables with default values are located in [defaults/main.yml](defaults/ma
 | `nsx_ovf_role` | | An optional value to specify for VM role, useful if deploying the unified appliance |
 | `nsx_ovf_resource_pool` | | An optional resource pool to place the VM at in vSphere |
 
-## Example
-
-### Playbook
+## Example Playbooks
 
 ```yaml
 - hosts: nsx-manager[0]
@@ -80,7 +78,7 @@ All variables with default values are located in [defaults/main.yml](defaults/ma
     nsx_ovf_password: my_admin_password_to_nsx
     nsx_ovf_root_password: my_root_password_to_nsx
   roles:
-    - nsx-ovf
+    - nsx-deploy-ovf
 ```
 ## License
 
