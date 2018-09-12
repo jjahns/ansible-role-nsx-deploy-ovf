@@ -146,8 +146,9 @@ from ansible.module_utils.basic import AnsibleModule
 from ansible.module_utils.six import string_types
 from ansible.module_utils.urls import generic_urlparse, open_url, urlparse, urlunparse
 from ansible.module_utils.vmware import (HAS_PYVMOMI, connect_to_api, find_datacenter_by_name, find_datastore_by_name,
-                                         find_network_by_name, find_resource_pool_by_name, find_vm_by_name, find_cluster_by_name,
-                                         gather_vm_facts, vmware_argument_spec, wait_for_task, wait_for_vm_ip)
+                                         find_network_by_name, find_resource_pool_by_name, find_vm_by_name,
+                                         find_cluster_by_name, gather_vm_facts, vmware_argument_spec, wait_for_task,
+                                         wait_for_vm_ip)
 try:
     from ansible.module_utils.vmware import vim
     from pyVmomi import vmodl
