@@ -4,7 +4,7 @@
 # Copyright: (c) 2017, Matt Martz <matt@sivel.net>
 #
 # GNU General Public License v3.0+ (see COPYING or https://www.gnu.org/licenses/gpl-3.0.txt)
-
+#
 # vmware: this module is not in current releases of Ansible as of 9/12/2018,
 #         so it has been copied and adjusted as per issue: #45528
 #         (https://github.com/ansible/ansible/issues/45528) so boolean values
@@ -187,7 +187,7 @@ class TarFileProgressReader(tarfile.ExFileObject):
     def __exit__(self, exc_type, exc_value, traceback):
         try:
             self.close()
-        except:
+        except Exception:
             pass
 
     def read(self, size=10240):
@@ -609,4 +609,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
