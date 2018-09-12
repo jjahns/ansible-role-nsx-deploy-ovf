@@ -3,7 +3,7 @@ galaxy_info:
   author: Jay Jahns
   description: jjahns@vmware.com
   company: VMware, Inc.
-  license: Apache
+  license: BSD-2
   min_ansible_version: 2.7
   github_branch: master
   platforms:
