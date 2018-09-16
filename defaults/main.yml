@@ -1,14 +1,91 @@
 ---
 
+# vSphere hostname - ESXI or vCenter
+nsx_ovf_vsphere_hostname:
+
+# vSphere username
+nsx_ovf_vsphere_username: administrator@vsphere.local
+
+# vSphere password
+nsx_ovf_vsphere_password:
+
+# Validate vSphere SSL certificate
 nsx_ovf_vsphere_validate_certs: yes
+
+# Datacenter
+nsx_ovf_datacenter:
+
+# Cluster
+nsx_ovf_cluster:
+
+# Datastore
+nsx_ovf_datastore:
+
+# Networks
+nsx_ovf_networks:
+
+# Path to OVF file
+nsx_ovf_path:
+
+# Allow OVF to deploy with the same name as existing VM
 nsx_ovf_allow_duplicates: no
+
+# Deployment size of the NSX appliance
 nsx_ovf_deployment_option: medium
+
+# Disk provisioning of the NSX appliance
 nsx_ovf_disk_provisioning: thin
+
+# Fail if there are any warnings with the customization spec
 nsx_ovf_fail_on_spec_warnings: yes
+
+# Name of the VM in vSphere
 nsx_ovf_vmname: "{{ inventory_hostname }}"
+
+# Power on after deployment complete
 nsx_ovf_power_on: yes
-nsx_ovf_wait: yes
-nsx_ovf_wait_for_ip_address: yes
-nsx_ovf_enable_ssh: False
-nsx_ovf_enable_root_ssh: False
+
+# Enable SSH access using admin
+nsx_ovf_enable_ssh: no
+
+# Enable SSH access using root
+nsx_ovf_enable_root_ssh: no
+
+# Hostname of the VM
 nsx_ovf_vmhostname: "{{ inventory_hostname }}"
+
+# Wait for VM to successfully power on
+nsx_ovf_wait: yes
+
+# Wait for VMware Tools to report an IP address
+nsx_ovf_wait_for_ip_address: yes
+
+# IP address of the VM
+nsx_ovf_ip_address:
+
+# Netmask of the VM
+nsx_ovf_netmask:
+
+# Gateway of the VM
+nsx_ovf_gateway:
+
+# List of DNS servers
+nsx_ovf_dns_servers:
+
+# Domain suffix of the VM
+nsx_ovf_domain:
+
+# List of NTP servers
+nsx_ovf_ntp_servers:
+
+# Admin password
+nsx_ovf_password:
+
+# Root password
+nsx_ovf_root_password:
+
+# Folder to place VM in
+nsx_ovf_folder:
+
+# Resource pool to place VM in
+nsx_ovf_resource_pool:
